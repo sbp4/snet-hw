@@ -65,23 +65,13 @@
 
 -------------------------------------------------------
 
-# dhcpd.conf
-#
-# Configuration file for dhcpd
-#
+***dhcpd.conf***
 
-# option definitions common to all supported networks...
 option domain-name "netology.local";
 option domain-name-servers 178.21.0.3, 178.21.0.5;
 default-lease-time 3600;
 max-lease-time 7200;
-
-# If this DHCP server is the official DHCP server for the local
-# network, the authoritative directive should be uncommented.
 authoritative;
-
-# this is the section for the local subnet
-
 subnet 178.21.0.0 netmask 255.255.255.0 {
           option routers 178.21.0.1;
           option subnet-mask 255.255.255.0;
