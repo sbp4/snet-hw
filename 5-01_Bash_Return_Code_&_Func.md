@@ -10,6 +10,7 @@
 
 ***Ответ:***
 
+<pre><code>
 #!/bin/bash
 
 i=1
@@ -17,7 +18,7 @@ while [[ $i -le 33 ]]; do
     echo $(($i * 3))
     i=$(($i + 1))
 done
-
+</code></pre>
 
 ------
 ### Задание 2.
@@ -28,13 +29,14 @@ done
 
 ***Ответ:***
 
+<pre><code>
 #!/bin/bash
 
 while sleep 5; 
 do
   date '+%H:%M:%S' && cat /proc/loadavg;
 done
-
+</code></pre>
 
 ------
 ### Задание 3.
@@ -51,6 +53,7 @@ done
 
 ***Ответ:***
 
+<pre><code>
 #!/bin/bash
 
 directory_stat () {  
@@ -64,6 +67,7 @@ directory_stat () {
 echo "insert directory name"
 read name
 directory_stat
+</code></pre>
 
 ------
 ## Дополнительные задания (со звездочкой*)
